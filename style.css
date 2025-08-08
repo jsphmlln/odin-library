@@ -1,0 +1,91 @@
+
+*{
+  padding: 0;
+  margin: 10px;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: large;
+}
+
+body{
+  background-color: violet;
+}
+
+header{
+  display: flex;
+  align-items: center;
+}
+
+#bookDiv{
+  background-color: purple;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 0 rgb(95, 0, 95);
+}
+
+#bookDiv p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#library{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 20px;
+  gap: 10px;
+  justify-content: center;
+}
+
+button{
+  background-color: orange;
+  color: rgb(160, 73, 2);
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 0 rgb(212, 96, 1);
+}
+
+button:hover, button:focus{
+  scale: 92%;
+  outline: 0;
+}
+
+dialog{
+  color: rgb(95, 0, 95);
+  align-self: center;
+  justify-self: center;
+  border: 0;
+  border-radius: 15px;
+  background-color: violet;
+  box-shadow: 4px 4px 0 rgb(131, 42, 111);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+dialog::backdrop{
+  background-color: rgba(0,0,0,.5);
+}
+
+dialog input{
+  border: 0;
+  border-radius: 5px;
+  padding: 2px;
+  outline: 0;
+  flex: 1;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
